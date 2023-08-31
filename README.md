@@ -1,7 +1,6 @@
-# mercury-scf18
-Tracking Mercury's SCF grant application
-
 ![mercury_banner](https://github.com/xycloo/mercury-scf18/assets/70587974/8885d3a2-2751-4ad9-8453-f7678d103434)
+
+> This repo is for tracking Mercury's SCF grant application and deliverables.
 
 # Submission proposal
 Check out the submission document at https://docs.google.com/document/d/16rgq5mopskhU4CFE69VAi--IsCxNDeNjBlb-buidl08/edit?usp=sharing.
