@@ -43,3 +43,8 @@ This example subscribes to all events of xycLoans' XLM pool:
   --data '{"contract_id":"CCVP5K2R2X4RWSJB7WZDDYVWHWDUUZWBWHLFPSZBIDOAWXH3LX6GG5PU", "topic1":"AAAADwAAAAdYWUNMT0FOAA=="}' -H "Authorization: Bearer YOUR_JWT_ACCESS_TOKEN" \
   http://localhost:3030/newsubscription
 ```
+
+### Querying the graphQL API
+
+We expose a graphiql endpoint at http://ec2-16-171-133-42.eu-north-1.compute.amazonaws.com:5000/graphiql.
+From there you can play with querying contract events.
