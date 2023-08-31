@@ -14,7 +14,9 @@ All these three components are experimental in the alpha release and still need 
 
 ### Requesting access
 
-To request access, you can either reach out at [tommaso@xycloo.com](mailto:tommaso@xycloo.com), or even better reach out on Discord through a private message to `heytdep` or by requesting access keys on the stellar developer's discord project page (or on our discord server).
+To request access, you can either reach out at [tommaso@xycloo.com](mailto:tommaso@xycloo.com), or even better reach out on Discord through a private message to `heytdep` or by requesting access keys on the stellar developer's discord project page (or on our discord server). Make sure to let us know:
+- your discord username (or email) to receive the access token.
+- you can also provide a username and email (both optional, if not specified will be random).
 
 For alpha users Mercury is entirely free (infrastructure is maintained by the funding), and we highly appreciate user feedback, so don't hesitate to request access.
 
@@ -47,4 +49,46 @@ This example subscribes to all events of xycLoans' XLM pool:
 ### Querying the graphQL API
 
 We expose a graphiql endpoint at http://ec2-16-171-133-42.eu-north-1.compute.amazonaws.com:5000/graphiql.
-From there you can play with querying contract events.
+From there you can play with querying contract events, for example:
+
+```graphql
+query MyQuery {
+  allContractEvents {
+    edges {
+      node {
+        contractId
+        data
+        ledgerTimestamp
+        topic1
+        topic2
+        topic3
+        topic4
+      }
+    }
+  }
+}
+```
+
+Result:
+
+```json
+{
+  "data": {
+    "allContractEvents": {
+      "edges": [
+        {
+          "node": {
+            "contractId": "CCVP5K2R2X4RWSJB7WZDDYVWHWDUUZWBWHLFPSZBIDOAWXH3LX6GG5PU",
+            "data": "AAAAEAAAAAEAAAACAAAAEgAAAAAAAAAAogTcVVMuvPi5pHpK74IlI5Aliz10ZZ6ek+xmLfzrasgAAAAKAAAAAAAAAAAAAAAAAAMNQA==",
+            "ledgerTimestamp": 668464,
+            "topic1": "AAAADwAAAAdYWUNMT0FOAA==",
+            "topic2": "AAAADwAAAAdkZXBvc2l0AA==",
+            "topic3": null,
+            "topic4": null
+          }
+        }
+      ]
+    }
+  }
+}
+```
