@@ -23,7 +23,7 @@ For alpha users Mercury is entirely free (infrastructure is maintained by the fu
 
 The alpha version only supports contract events (given they are simple and effective in an indexer). To create a new subscription, refer to the following API:
 
-**endpoint**: http://BACKEND/newsubscription
+**endpoint**: http://PUBLIC_DNS:3030/newsubscription
 **method**: POST
 **content-type**: application/json
 **auth**: "Authorization: Bearer YOUR_JWT_ACCESS_TOKEN"
@@ -39,15 +39,15 @@ As you can see, you can choose to be as specific as you want with the events you
 This example subscribes to all events of xycLoans' XLM pool:
 
 ```curl
- curl --header "Content-Type: application/json" \                                                                                                    Node system
+ curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"contract_id":"CCVP5K2R2X4RWSJB7WZDDYVWHWDUUZWBWHLFPSZBIDOAWXH3LX6GG5PU", "topic1":"AAAADwAAAAdYWUNMT0FOAA=="}' -H "Authorization: Bearer YOUR_JWT_ACCESS_TOKEN" \
-  http://localhost:3030/newsubscription
+  http://PUBLIC_DNS:3030/newsubscription
 ```
 
 ### Querying the graphQL API
 
-We expose a graphiql endpoint at http://ec2-16-171-133-42.eu-north-1.compute.amazonaws.com:5000/graphiql.
+We expose a graphiql endpoint in from our ec2 instance: PUBLIC_DNS.
 From there you can play with querying contract events, for example:
 
 ```graphql
