@@ -19,6 +19,18 @@ To request access, you can either reach out at [tommaso@xycloo.com](mailto:tomma
 
 For alpha users Mercury is entirely free (infrastructure is maintained by the funding), and we highly appreciate user feedback, so don't hesitate to request access.
 
+### Authenticating
+We should have provided you with a JWT token already, but if you want to authenticate run the following mutation on the graphql endpoint providing the mail and password you were given:
+
+```graphql
+mutation MyMutation {
+  authenticate(input: {email: "user@mercury-tester.com", password: "yourpassword"}) {
+    clientMutationId
+    jwtToken
+  }
+}
+```
+
 ### Subscribing to contract events
 
 The alpha version only supports contract events (given they are simple and effective in an indexer). To create a new subscription, refer to the following API:
