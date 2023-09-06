@@ -14,8 +14,6 @@
 
 <!-- TOC end -->
 
-<br/>
-
 ### Requesting access
 
 To request access, you can either reach out at [tommaso@xycloo.com](mailto:tommaso@xycloo.com), or even better reach out on Discord through a private message to `heytdep` or by requesting access keys on the stellar developer's discord project page (or on our discord server). Make sure to let us know:
