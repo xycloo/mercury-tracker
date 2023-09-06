@@ -1,4 +1,6 @@
-![mercury_banner](https://github.com/xycloo/mercury-scf18/assets/70587974/8885d3a2-2751-4ad9-8453-f7678d103434)
+<img src="https://github.com/xycloo/mercury-scf/assets/70587974/a60f1906-643d-49f4-92e7-7f4d605164cc" alt="mercury-logo" width="100" />
+
+# Mercury
 
 > This repo is for tracking Mercury's progrss, SCF grant application and deliverables.
 
