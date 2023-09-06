@@ -1,6 +1,20 @@
 <img src="https://github.com/xycloo/mercury-scf/assets/70587974/a60f1906-643d-49f4-92e7-7f4d605164cc" alt="mercury-logo" width="100"/>
 
-# ALPHA Release
+<br/>
+<br/>
+
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Requesting access](#requesting-access)
+- [Authenticating](#authenticating)
+- [Usage Instructions](#usage-instructions)
+  * [Subscribing to contract events](#subscribing-to-contract-events)
+  * [Querying the graphQL API](#querying-the-graphql-api)
+- [Step-by-step simple example](#step-by-step-simple-example)
+
+<!-- TOC end -->
+
+<br/>
 
 ### Requesting access
 
@@ -22,7 +36,9 @@ mutation MyMutation {
 }
 ```
 
-### Subscribing to contract events
+# Usage Instructions
+
+## Subscribing to contract events
 
 The alpha version only supports contract events (given they are simple and effective in an indexer). To create a new subscription, refer to the following API:
 
@@ -48,7 +64,7 @@ This example subscribes to all events of xycLoans' XLM pool:
   http://ec2-51-20-3-70.eu-north-1.compute.amazonaws.com:3030/newsubscription
 ```
 
-### Querying the graphQL API
+## Querying the graphQL API
 
 We expose a graphiql endpoint in from our ec2 instance: `http://ec2-51-20-3-70.eu-north-1.compute.amazonaws.com:5000/graphiql`.
 From there you can play with querying contract events, for example:
@@ -95,7 +111,7 @@ Result:
 }
 ```
 
-### Step-by-step simple example
+# Step-by-step simple example
 
 To just test out Mercury alpha, you can follow this step-by-step guide where you just need your JWT access token (see [here](#requesting-access)) and a funded Stellar account on Futurenet (you can use the [friendbot](https://laboratory.stellar.org/#account-creator?network=futurenet)). 
 
