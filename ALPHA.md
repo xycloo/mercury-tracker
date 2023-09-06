@@ -1,3 +1,5 @@
+<img src="https://github.com/xycloo/mercury-scf/assets/70587974/a60f1906-643d-49f4-92e7-7f4d605164cc" alt="mercury-logo" width="100"/>
+
 # ALPHA Release
 
 ### Requesting access
