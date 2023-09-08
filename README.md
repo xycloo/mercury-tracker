@@ -1,4 +1,4 @@
-<img src="https://github.com/xycloo/mercury-scf/assets/70587974/a60f1906-643d-49f4-92e7-7f4d605164cc" alt="mercury-logo" width="100" />
+<img src="https://github.com/xycloo/mercury-tracker/assets/70587974/595800a1-0fbe-466d-8feb-475889be6ee5" alt="mercury-logo" width="100" />
 
 # Mercury
 
