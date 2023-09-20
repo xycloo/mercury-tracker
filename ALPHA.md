@@ -40,7 +40,7 @@ mutation MyMutation {
 
 The alpha version only supports contract events (given they are simple and effective in an indexer). To create a new subscription, refer to the following API:
 
-**endpoint**: http://ec2-13-51-194-32.eu-north-1.compute.amazonaws.com:3030/newsubscription
+**endpoint**: http://ec2-51-20-32-237.eu-north-1.compute.amazonaws.com:3030/newsubscription
 **method**: POST
 **content-type**: application/json
 **auth**: "Authorization: Bearer YOUR_JWT_ACCESS_TOKEN"
@@ -59,12 +59,12 @@ This example subscribes to all events of xycLoans' XLM pool:
  curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"contract_id":"CCVP5K2R2X4RWSJB7WZDDYVWHWDUUZWBWHLFPSZBIDOAWXH3LX6GG5PU"}' -H "Authorization: Bearer YOUR_JWT_ACCESS_TOKEN" \
-  http://ec2-13-51-194-32.eu-north-1.compute.amazonaws.com:3030/newsubscription
+  http://ec2-51-20-32-237.eu-north-1.compute.amazonaws.com:3030/newsubscription
 ```
 
 ## Querying the graphQL API
 
-We expose a graphiql endpoint in from our ec2 instance: `http://ec2-13-51-194-32.eu-north-1.compute.amazonaws.com:5000/graphiql`.
+We expose a graphiql endpoint in from our ec2 instance: `http://ec2-51-20-32-237.eu-north-1.compute.amazonaws.com:5000/graphiql`.
 From there you can play with querying contract events, for example:
 
 ```graphql
@@ -119,7 +119,7 @@ To just test out Mercury alpha, you can follow this step-by-step guide where you
 curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"contract_id":"CD4CCGHEUIGU3BTXZRCQ24LJ547TWLNTMJ7BHDBO6DJPHUTBQBLCDECA"}' -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  http://ec2-13-51-194-32.eu-north-1.compute.amazonaws.com:3030/newsubscription
+  http://ec2-51-20-32-237.eu-north-1.compute.amazonaws.com:3030/newsubscription
 ```
 
 Where:
@@ -147,7 +147,7 @@ soroban contract invoke --id CD4CCGHEUIGU3BTXZRCQ24LJ547TWLNTMJ7BHDBO6DJPHUTBQBL
 
 Just as you receive the result of the transaction, your event will be available.
 
-3. You can now access the Graphiql http://ec2-13-51-194-32.eu-north-1.compute.amazonaws.com:5000/graphiql endpoint (or send the queries to the graphql http://ec2-13-51-194-32.eu-north-1.compute.amazonaws.com:5000/graphql endpoint):
+3. You can now access the Graphiql http://ec2-51-20-32-237.eu-north-1.compute.amazonaws.com:5000/graphiql endpoint (or send the queries to the graphql http://ec2-51-20-32-237.eu-north-1.compute.amazonaws.com:5000/graphql endpoint):
 
 > Note: remember to add the jwt token, `{"Authorization": "Bearer YOUR_JWT_TOKEN"}` within "request headers".
 
