@@ -9,6 +9,11 @@ Mercury is an innovative centralized data indexer focused on Soroban that aims t
 Check out the submission document at [https://docs.google.com/document/d/16rgq5mopskhU4CFE69VAi--IsCxNDeNjBlb-buidl08/edit?usp=sharing](https://docs.google.com/document/d/1BER6CtoqMZ6iSk3s18_782bJx2npkBHcLMQio8MRl0A/edit?usp=sharing).
 
 
+## (October 23) New pre-release candidate live now!
+
+Mercury's new BETA pre-release is now live! Check https://github.com/xycloo/mercury-tracker/releases/tag/beta-rc1 for details.
+
+
 ## Pre-release candidate for Beta version
 
 The pre-release version for our first beta release is now live!
